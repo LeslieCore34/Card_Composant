@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 1em;
+    width: 90%;
+
+}
+
+#jazz-image {
+    width: 50%;
+    border-radius: 1em 0 0 1em;
+}
+
+#card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    h1 {
+        font-size: 40px;
+        margin-left: 2em;
+        margin-bottom: 1em;
+    }
+}
