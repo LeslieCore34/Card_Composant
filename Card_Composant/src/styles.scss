@@ -3,18 +3,24 @@
     padding: 0;
 }
 
+@import url(https://fonts.googleapis.com/css2?family=Young+Serif&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap");
+
+$fontText: 'Roboto Condensed', sans-serif;
+
 #container {
     display: flex;
     flex-direction: row;
     border: 1px solid black;
-    border-radius: 1em;
-    width: 90%;
 
+    width: 90%;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
 }
 
 #jazz-image {
     width: 50%;
-    border-radius: 1em 0 0 1em;
+    border-top-left-radius: 1em;
 }
 
 #card-text {
@@ -29,5 +35,27 @@ div {
         font-size: 40px;
         margin-left: 2em;
         margin-bottom: 1em;
+        font-family: 'Young Serif', serif;
+        color: #582707;
     }
+
+    p {
+        font-family: $fontText;
+        color: #972D07;
+        font-size: 25px;
+    }
+}
+
+.stars-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 40px;
+    width: 90%;
+    border-bottom-right-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    border: 1px solid black;
+    margin: 0;
+    height: 100px;
+
 }

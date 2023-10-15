@@ -1,6 +1,8 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+One npm package added : react-stars component.
+
+To create style in CSS I have install SASS.
 
 Currently, two official plugins are available:
 

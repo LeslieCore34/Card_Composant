@@ -1,33 +1,25 @@
-import { useState } from 'react'
-import './App.css'
-import Card from './Components/Card'
-import ReactStars from 'react-stars'
-import React from 'react'
+import React, { useState } from 'react';
+import './App.css';
 import './styles.scss';
-
-
-const ratingChanged = (newRating) => {
-  console.log(newRating)
-}
-
+import CardFile from './Components/CardFile';
+import StarsRating from './Components/StarsRating';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [count, setCount] = useState(0);
 
   return (
     <>
       <div>
-        <Card /> {Card}
-        <ReactStars
+        <CardFile />
+        <StarsRating
           count={5}
-          onChange={ratingChanged}
-          size={24}
-          color2={'#ffd700'}
+          onChange={(newRating) => console.log(newRating)}
+          size={34}
+          color2="#ffd700"
         />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
